@@ -9,19 +9,13 @@ body {
   
   }
  
-  /* Style the top navigation bar */
   .navbar {
-    
     overflow: hidden;
     background-color: rgb(255, 255, 255);
     position: fixed;
-    top: 10;
-    
+    top: 10;   
   }
-  
-  
-  /* Style the topnav links */
-  .navbar a {
+   .navbar a {
     float: left;
     display: block;
     color: #361834;
@@ -30,45 +24,31 @@ body {
     text-decoration: none;
   }
   
-  /* Change color on hover */
   .navbar a:hover {
     background-color: rgb(241, 204, 245);
     color: black;
   }
  #map {
-    height: 400px;  /* The height is 400 pixels */
+    height: 400px;  
     width: 100%; 
  }
 
-  /* Create two unequal columns that floats next to each other */
-  /* Left column */
   .leftcolumn {   
     float: left;
     width: 75%;
   }
  
   
-  /* Right column */
   .rightcolumn {
     float: left;
     width: 25%;
     padding-left: 20px;
   }
  
-  
-  /* Fake image */
   .fakeimg {
     width: 100%;
     padding: 100px;
   }
-  /*.hometownphoto {
-    background-size: cover;
-    width: 100%;
-    padding: 60px;
-    
-  }*/
-  
-  /* Add a card effect for articles */
   .card {
     background-color: white;
     padding: 20px;
@@ -79,9 +59,6 @@ body {
      height: 100%;
      width: 100%;
  }
-
-  
-  /* Clear floats after the columns */
   .row:after {
     content: "";
     display: table;
@@ -101,7 +78,6 @@ body {
     margin-top: 20px;
   }
   
-  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 800px) {
     .leftcolumn, .rightcolumn {   
       width: 100%;
@@ -109,7 +85,6 @@ body {
     }
   }
   
-  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
   @media screen and (max-width: 400px) {
     .navbar a {
       float: none;
@@ -121,27 +96,23 @@ body {
     width: 25%;
   }
   
-  /* Clear floats after rows */ 
   .row:after {
     content: "";
     display: table;
     clear: both;
   }
   
-  /* Content */
   .content {
     background-color: white;
     padding: 10px;
   }
   
-  /* Responsive layout - makes a two column-layout instead of four columns */
   @media screen and (max-width: 900px) {
     .column {
       width: 50%;
     }
   }
   
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
     .column {
       width: 100%;
