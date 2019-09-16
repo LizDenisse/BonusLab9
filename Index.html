@@ -23,7 +23,7 @@
             <p>Photo of my neightboorwood, Washington Heights and the George washington bridge which I used to cross as a form of workout</p>
      
       <div class="hometownimg" >
-    
+            
       <p>Oooooooh, New York!</p>
         <p> Oooooooh, New York!</p>
             
@@ -74,7 +74,33 @@
 
 
            <p> Empire state of mind by Alicia Keys and Jay-z
-            
+              
+
+               
+                
+                <h3>My Google Maps Demo</h3>
+                <!--The div element for the map -->
+                <div id="map"></div>
+                <script>
+            // Initialize and add the map
+            function initMap() {
+              // The location of Uluru
+              var uluru = {lat: 40.7128, lng: 74.0060};
+              // The map, centered at Uluru
+              var map = new google.maps.Map(
+                  document.getElementById('map'), {zoom: 50, center: uluru});
+              // The marker, positioned at Uluru
+              var marker = new google.maps.Marker({position: uluru, map: map});
+            }
+                </script>
+                <!--Load the API from the specified URL
+                * The async attribute allows the browser to render the page while the API loads
+                * The key parameter will contain your own API key (which is not needed for this tutorial)
+                * The callback parameter executes the initMap() function
+                -->
+              
+                <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA72-AhTMYE2i2XqfkbdC7y_kowLkll0bE&callback=initMap"
+                type="text/javascript"></script>
             </p>    </div>   </div></div>
     <div class="card">
       <h2>Blog</h2>
