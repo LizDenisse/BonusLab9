@@ -19,6 +19,7 @@ body {
     
   }
   
+  
   /* Style the topnav links */
   .navbar a {
     float: left;
@@ -34,7 +35,11 @@ body {
     background-color: rgb(241, 204, 245);
     color: black;
   }
-  
+ #map {
+    height: 400px;  /* The height is 400 pixels */
+    width: 100%; 
+ }
+
   /* Create two unequal columns that floats next to each other */
   /* Left column */
   .leftcolumn {   
