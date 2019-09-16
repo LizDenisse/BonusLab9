@@ -1,69 +1,120 @@
-<!DOCTYPE html>
-<html>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
- <link rel="stylesheet" type="text/css" href="Main.css" />
+* {
+    box-sizing: border-box;
+  }
+body {
+    font-family: Arial;
+    padding: 10px;
+    background: url("Images/lucky.jpg")no-repeat fixed center;
+    box-sizing: border-box;
+  
+  }
+ 
+  .navbar {
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    top: 10;   
+  }
+   .navbar a {
+    float: left;
+    display: block;
+    color: #361834;
+    text-align: center; 
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .navbar a:hover {
+    background-color: rgb(241, 204, 245);
+    color: black;
+  }
+ #map {
+    height: 400px;  
+    width: 100%; 
+ }
 
-
-
-<div class="navbar">
-  <a class="active" href="Index.html"><i class="fa fa-fw fa-home"></i> Home</a> 
-  <a href="About.html">About</a>
-  <a href="Portfolio.html">Portfolio</a>
-      </div>
-
-      <body>
-          
-            <div class="card">
-                    <h1>Portfolio</h1>
-                    <div>        
-                       
-      <p></p>
-            </div>
-            <div class="column">
-                    <div class="content">
-                      <img src="Images/liberty.JPG" alt="liberty" style="width:100%">
-                      <h3>Señora Libertad</h3>
-                      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
-                    </div>
-                  </div>
-                  <div class="column">
-                    <div class="content">
-                    <img src="Images/baby.jpg" alt="Lights" style="width:100%">
-                      <h3>Scared Infant</h3>
-                      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
-                    </div>
-                  </div>
-                  <div class="column">
-                    <div class="content">
-                    <img src="Images/spm3.jpg" alt="Nature" style="width:100%">
-                      <h3>Saint Peters- town of Nightmares</h3>
-                      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
-                    </div>
-                  </div>
-                  <div class="column">
-                    <div class="content">
-                    <img src="Images/Brooklyn.JPG" alt="Mountains" style="width:100%">
-                      <h3>Cousing Brooklyn</h3>
-                      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
-                    </div>
-                  </div>
-                <!-- END GRID -->
-                </div>
-                
-                <div class="content">
-                  <img src="Images/quantum.jpg" alt="Bear" style="width:100%">
-                  <h3>Home</h3>
-                  <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
-                </div>
-                
-                <!-- END MAIN -->
-                </div>
-</body>
-
-<footer class="footer">
-        <h2>Hakuna Matata</h2>
-      </footer>
-
-</html>
-
+  .leftcolumn {   
+    float: left;
+    width: 75%;
+  }
+ 
+  
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+  }
+ 
+  .fakeimg {
+    width: 100%;
+    padding: 100px;
+  }
+  .card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+  }
+ .card img 
+ {
+     height: 100%;
+     width: 100%;
+ }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  #home {
+    width: 46px;
+    height: 44px;
+    
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd ;
+    margin-top: 20px;
+  }
+  
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .navbar a {
+      float: none;
+      width: 100%;
+    }
+}
+.column {
+    float: left;
+    width: 25%;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .content {
+    background-color: white;
+    padding: 10px;
+  }
+  
+  @media screen and (max-width: 900px) {
+    .column {
+      width: 50%;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
